@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://c74hdcmfvscdx"]
+
+[ext_resource type="Texture2D" uid="uid://dr7jrhb8qhs0q" path="res://icon.svg" id="1_wtcfe"]
+[ext_resource type="Script" uid="uid://crnjkaphe44av" path="res://scripts/button.gd" id="2_0e48y"]
+
+[node name="Node2D" type="Node2D" unique_id=1480572790]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2077328472]
+position = Vector2(294, 144)
+texture = ExtResource("1_wtcfe")
+
+[node name="Button" type="Button" parent="." unique_id=939532923]
+offset_left = 268.0
+offset_top = 236.0
+offset_right = 324.0
+offset_bottom = 267.0
+text = "点我呀"
+script = ExtResource("2_0e48y")
+
+[connection signal="pressed" from="Button" to="Button" method="_button_pressed"]
