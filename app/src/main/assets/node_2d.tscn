@@ -1,20 +1,31 @@
 [gd_scene format=3 uid="uid://c74hdcmfvscdx"]
 
-[ext_resource type="Texture2D" uid="uid://dr7jrhb8qhs0q" path="res://icon.svg" id="1_wtcfe"]
-[ext_resource type="Script" uid="uid://crnjkaphe44av" path="res://scripts/button.gd" id="2_0e48y"]
+[sub_resource type="GDScript" id="GDScript_y32ns"]
+script/source = "extends Button
 
-[node name="Node2D" type="Node2D" unique_id=1480572790]
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2077328472]
-position = Vector2(294, 144)
-texture = ExtResource("1_wtcfe")
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
 
-[node name="Button" type="Button" parent="." unique_id=939532923]
-offset_left = 268.0
-offset_top = 236.0
-offset_right = 324.0
-offset_bottom = 267.0
-text = "点我呀"
-script = ExtResource("2_0e48y")
 
-[connection signal="pressed" from="Button" to="Button" method="_button_pressed"]
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+	
+	
+func _onclick():
+	print('jj')
+"
+
+[node name="Node2D" type="Node2D" unique_id=791191287]
+
+[node name="Button" type="Button" parent="." unique_id=1428553113]
+offset_left = 167.0
+offset_top = 112.0
+offset_right = 313.0
+offset_bottom = 194.0
+text = "点我"
+script = SubResource("GDScript_y32ns")
+
+[connection signal="pressed" from="Button" to="Button" method="_onclick"]
