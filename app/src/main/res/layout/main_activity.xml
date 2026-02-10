@@ -26,6 +26,16 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+<!--    <Button-->
+<!--        android:id="@+id/btn_next"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:text="Next"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
     <Button
         android:id="@+id/btn_stop"
         android:layout_width="wrap_content"

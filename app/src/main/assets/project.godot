@@ -10,18 +10,26 @@ config_version=5
 
 [application]
 
-config/name="godot-a"
-run/main_scene="res://node_2d.tscn"
-config/features=PackedStringArray("4.6", "GL Compatibility")
+config/name="GLTF Viewer"
+run/main_scene="res://main.tscn"
+config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
-[physics]
+[debug]
 
-3d/physics_engine="Jolt Physics"
+settings/stdout/verbose_stdout=true
+gdscript/warnings/untyped_declaration=2
+
+[display]
+
+window/handheld/orientation=6
+
+[input_devices]
+
+pointing/android/enable_pan_and_scale_gestures=true
 
 [rendering]
 
-rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
 textures/vram_compression/import_etc2_astc=true
